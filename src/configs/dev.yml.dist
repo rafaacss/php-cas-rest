@@ -1,0 +1,24 @@
+username: user
+password: pwd
+debug: false
+temp: ''
+systens:
+    -   name: isei
+        base_url: 'https://sistema/rest'
+        services:
+            lista_sistemas:
+                paths:
+                    listarSistemas:
+                        uri: /sistema/sistemas-servico
+                        type: POST
+            pesquisa_processo:
+                paths:
+                    pesquisarProcessos:
+                        uri: /pesquisa-processo
+                        type: POST
+cas:
+    host: 'https://servercas'
+    port: '443'
+    context: cas
+    check_ssl: false
+    server_ca_cert_path: cacert.cer
